@@ -11,7 +11,9 @@ void main() {
   a = 7;
   print(a); // override value of a
 
-  int c = 2232882382832323323; // up to 19 is fine, after that can't be represent in 64 bits
+  int c =
+      2232882382832323323; // up to 19 is fine, after that can't be represent in 64 bits
+  print(c);
 
   BigInt long_int;
   long_int = BigInt.parse('22328823828323233232645');
