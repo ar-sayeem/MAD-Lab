@@ -4,8 +4,7 @@ void main() {
 }
 
 class Dog {
-Dog(){
-  print("Dog Barks\n");
-}
-
+  Dog() {
+    print("Dog Barks\n");
+  }
 }
