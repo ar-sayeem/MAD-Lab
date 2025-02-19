@@ -127,3 +127,34 @@
 // void main(){
 //   print("SpeciaL = ${isSpecial(145)}");
 // }
+
+
+
+int fact(int n) {
+  int factorial = 1;
+  for (int i = 1; i <= n; i++) {
+    factorial *= i;
+  }
+  return factorial;
+}
+
+void isSpecial(int n) {
+  String a = n.toString();
+  int total = 0;
+  for (var i in a.split('')) {
+    total = total + fact(int.parse(i));
+  }
+//   return total == n;
+  if (total == n) {
+    print('SPECIAL\n');
+  } else {
+    print('NOT S\n');
+  }
+}
+
+void main() {
+//   print("SpeciaL = ${isSpecial(145)}");
+  isSpecial(15);
+  isSpecial(145);
+}
+\
